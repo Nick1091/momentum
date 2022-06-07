@@ -1,0 +1,37 @@
+[
+  {"placehold" :  {
+      "ru": "[Введите ваше имя]",
+      "en": "[Enter name]"
+      }
+  } ,
+
+  {"name": {
+      "ru": "графический чип",
+      "en": "graphics processing unit"
+      }
+  }, 
+
+  {"enterName": {
+      "ru": "[Введите ваше имя]",
+      "en": "[Enter name]"
+      }
+  }, 
+
+  {"memory-type": {
+      "ru": "тип памяти",
+      "en": "memory type"
+      }
+  }, 
+
+  {"cool": {
+      "ru": "тип системы охлаждения",
+      "en": "сooling system type"
+      }
+  }, 
+
+  {"more": {
+      "ru": "детально о товаре",
+      "en": "more details"
+    }
+  }
+]

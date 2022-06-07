@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <p class="text_under"></p>
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+        <input class= "range1 " type="range" value="0" min="0" max="100" step="0.01">
+        <div class="duration_timer">
+        </div>
+        <svg class = "volume_svg" width="25" height="25" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path class = 'volume_icon' d="M832 352v1088q0 26-19 45t-45 19-45-19l-333-333h-262q-26 0-45-19t-19-45v-384q0-26 19-45t45-19h262l333-333q19-19 45-19t45 19 19 45zm384 544q0 76-42.5 141.5t-112.5 93.5q-10 5-25 5-26 0-45-18.5t-19-45.5q0-21 12-35.5t29-25 34-23 29-36 12-56.5-12-56.5-29-36-34-23-29-25-12-35.5q0-27 19-45.5t45-18.5q15 0 25 5 70 27 112.5 93t42.5 142zm256 0q0 153-85 282.5t-225 188.5q-13 5-25 5-27 0-46-19t-19-45q0-39 39-59 56-29 76-44 74-54 115.5-135.5t41.5-173.5-41.5-173.5-115.5-135.5q-20-15-76-44-39-20-39-59 0-26 19-45t45-19q13 0 26 5 140 59 225 188.5t85 282.5zm256 0q0 230-127 422.5t-338 283.5q-13 5-26 5-26 0-45-19t-19-45q0-36 39-59 7-4 22.5-10.5t22.5-10.5q46-25 82-51 123-91 192-227t69-289-69-289-192-227q-36-26-82-51-7-4-22.5-10.5t-22.5-10.5q-39-23-39-59 0-26 19-45t45-19q13 0 26 5 211 91 338 283.5t127 422.5z" fill="#fff"/></svg>
+        <input class= "range2 " type="range" value="20" min="0" max="100" step="1">
+      </div>
+      <ul class="play-list">
+      </ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" >
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="menu">
+      <div class = "images">
+        <input type="radio" id ="GitHub" class="GHub" name="bgImage" value="gitHub" checked>
+        <label class="g_h" for = "GitHub">GitHub</label>
+        <input type="radio" id ="UnsplashAPI" class="unsplash" value="unsplash" name="bgImage">
+        <label class="unsplash1" for = "UnsplashAPI">Unsplash API</label>
+        <input type="radio" id ="flick" class="flick" value="flick" name="bgImage">
+        <label class="flick2" for = "flick">Flickr API</label>
+      </div>
+      <div class="photoSource">
+        <input class= "unspl" type="text">
+        <input class = "flic" type="text">
+      </div>
+      <div class="HiddenBlock">
+        <div class="time_hidden check_hidden">Time</div>
+        <div class="data_hidden check_hidden">Date</div>
+        <div class="greeting_hidden check_hidden">Greeting</div>
+        <div class="quote_hidden check_hidden">Quote</div>
+        <div class="weather_hidden check_hidden">Weather</div>
+        <div class="audio_hidden check_hidden">Audio</div>
+      </div>
+      <select name="text" id="select">
+        <option class='langru options' value="ru" >ru</option>
+        <option class='langen options' value="en" selected>en</option>
+      </select>
+    </div>
+    <div class="quote_block">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+   </div>
+   <div class="list_to_do"> 
+     <div class="to_do_list">
+       <!-- <label class = "lab_to_do" for = checbox></label> -->
+       <button class="btn_todo">New Todo</button>
+     </div>
+     <p class="to_do">Todo</p>
+    </div>
+  </footer>
+  <script type="module" src="js/index.js"></script>
+  
+</body>
+</html>
